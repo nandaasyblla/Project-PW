@@ -1,0 +1,253 @@
+/* Pengaturan dasar */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #F3F6FA;
+  font-family: Arial, sans-serif;
+  color: #1F2937;
+}
+
+/* Wadah utama */
+.wadah {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  color: #1B365D;
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.header p {
+  color: #6B7280;
+  font-size: 14px;
+}
+
+/* Kartu saldo */
+.kartu-saldo {
+  background-color: #1B365D;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.kartu-saldo p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.kartu-saldo h2 {
+  font-size: 32px;
+  margin: 12px 0 25px;
+}
+
+.ringkasan-keuangan {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.ringkasan-keuangan div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ringkasan-keuangan span {
+  font-size: 13px;
+  color: #D1D5DB;
+}
+
+.ringkasan-keuangan strong {
+  font-size: 15px;
+}
+
+/* Kartu umum */
+.kartu {
+  background-color: white;
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.04);
+}
+
+.kartu h2 {
+  font-size: 18px;
+  color: #1B365D;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Form transaksi */
+.form-transaksi {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #D1D5DB;
+  border-radius: 7px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #1B365D;
+}
+
+/* Tombol tambah */
+.btn-tambah {
+  padding: 12px;
+  background-color: #1B365D;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-tambah:hover {
+  background-color: #294B78;
+}
+
+/* Daftar transaksi */
+.daftar-transaksi {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Item transaksi */
+.item-transaksi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.item-transaksi:last-child {
+  border-bottom: none;
+}
+
+.info-transaksi h3 {
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+
+.jenis-transaksi {
+  font-size: 12px;
+  color: #6B7280;
+}
+
+.aksi-transaksi {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nominal {
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Warna pemasukan dan pengeluaran */
+.masuk,
+.warna-hijau {
+  color: #16A34A;
+}
+
+.keluar,
+.warna-merah {
+  color: #DC2626;
+}
+
+/* Tombol hapus */
+.btn-hapus {
+  padding: 7px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FEE2E2;
+  color: #DC2626;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btn-hapus:hover {
+  background-color: #FECACA;
+}
+
+/* Pesan ketika belum ada transaksi */
+.pesan-kosong {
+  text-align: center;
+  color: #9CA3AF;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #9CA3AF;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+/* Tampilan mobile */
+@media (max-width: 600px) {
+  .wadah {
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 23px;
+  }
+
+  .kartu-saldo h2 {
+    font-size: 26px;
+  }
+
+  .item-transaksi {
+    align-items: flex-start;
+  }
+
+  .aksi-transaksi {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .ringkasan-keuangan strong {
+    font-size: 13px;
+  }
+}
